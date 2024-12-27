@@ -4,7 +4,7 @@ import commands
 import re
 
 def check(args):
-    print(commands.check_tasks())
+    print(int(commands.check_tasks() * 100))
 
 def show(args):
     tasks = commands.show_tasks()
