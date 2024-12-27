@@ -1,0 +1,12 @@
+[
+    {
+        "command": "ls",
+        "calculated_hash": "e7df7cd2ca07f4f1ab415d457a6e1c13",
+        "status": 0
+    },
+    {
+        "command": "ls main.py",
+        "calculated_hash": "main.py",
+        "status": 1
+    }
+]

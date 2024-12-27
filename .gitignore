@@ -1,0 +1,40 @@
+# Ігнорувати файли і каталоги, створені середовищем виконання
+venv/
+.env/
+.venv/
+# Для користувачів PyCharm
+.idea/
+# Для користувачів Visual Studio Code
+.vscode/
+# Для користувачів Eclipse
+.project
+# Для користувачів Emacs
+*~
+# Для тестових результатів
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+# Для Jupyter notebook
+.ipynb_checkpoints
+# Для логів
+*.log
+# Для кешованих файлів Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Для конфігураційних файлів Python
+*.db
+*.sqlite
+# Для pip
+pip-log.txt
+pip-delete-this-directory.txt
+# Для Poetry
+poetry.lock
+# Для distutils
+build/
+dist/
+*.egg-info/
+
