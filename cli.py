@@ -12,6 +12,7 @@ def show(args):
     for task in tasks:
         print(f"Command: {task['command']}")
         print(f"Hash: {task['calculated_hash']}")
+        print(f"Mode: {task['invert_mode']}")
         print(f"Status: {task['status']}")
         print(f"{'-'*35}")
 

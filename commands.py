@@ -17,9 +17,15 @@ def check_tasks():
         else:
             result = _execute_command(task['command'])
             if result:
-                if result == task['calculated_hash']:
-                    task['status'] = 1
-                    done += 1
+                if task['invert_mode'] == 1:
+                    if result != task['calculated_hash']:
+                        task['status'] = 1
+                        done += 1
+                else:
+                    if result == task['calculated_hash']:
+                        task['status'] = 1
+                        done += 1
+
 
     db.save_tasks(tasks)
     return done / len(tasks) if done else 0
@@ -85,4 +91,5 @@ def _execute_command(command: str, timeout=1):
         return None
 
 
-
+if __name__ == '__main__':
+    check_tasks()
