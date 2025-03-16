@@ -2,5 +2,5 @@ import os
 
 # this is constants
 project_directory = os.path.abspath(os.path.dirname(__file__))
-JSON_FILE = os.path.join(project_directory, "tasks.json")
+JSON_FILE = os.path.join(project_directory, "Tasks.json")
 LOG_FILE = os.path.join(project_directory, "app.log")
