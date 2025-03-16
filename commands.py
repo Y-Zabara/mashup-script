@@ -3,6 +3,7 @@ from logger_config import logger
 import db_manager as db
 
 
+
 def check_tasks():
     tasks = db.get_tasks()
     done = 0
